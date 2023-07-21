@@ -7,6 +7,8 @@ class Atm:
         self.pin=""
         self.balance=0
 
+        print(id(self))
+
         self.menu()
         
 
@@ -31,6 +33,7 @@ class Atm:
             print('Thanks')
         else:
             print("enter valid input")
+            self.menu()
 
     def create_pin(self):
         confirm_pin=input("Enter your PIN")
